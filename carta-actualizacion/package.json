@@ -1,0 +1,15 @@
+{
+  "name": "el-rinconcito-carta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Carta web de El Rinconcito San Nicolás",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

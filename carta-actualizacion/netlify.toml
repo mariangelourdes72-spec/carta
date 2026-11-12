@@ -1,0 +1,10 @@
+# Netlify: publica la carta y la función que guarda los datos (pedidos, panel, fotos).
+# Única configuración necesaria en Netlify: la variable ADMIN_PASSWORD (contraseña del panel).
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/fotos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
