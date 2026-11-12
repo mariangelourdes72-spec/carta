@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": ["firebase.json", "firestore.rules", "README.md", "**/.*", "preview.png", "seedream-antes-despues.jpg"],
+    "headers": [
+      { "source": "fotos/**", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] }
+    ]
+  },
+  "firestore": { "rules": "firestore.rules" }
+}
